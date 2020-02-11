@@ -1,0 +1,65 @@
+name:                pusher-platform-haskell
+version:             0.1.0.0
+
+synopsis:            Defines clients for Pusher platform clients such as Chatkit.
+
+description:         For a full description see the README.md
+homepage:            https://github.com/syallop/Pusher-Platform-Haskell
+license:             MIT
+license-file:        LICENSE
+author:              Samuel A. Yallop
+maintainer:          syallop@gmail.com
+category:            Chatkit
+build-type:          Simple
+extra-source-files:  README.md, ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Pusher,
+                       Pusher.Model,
+
+                       Pusher.Client,
+                       Pusher.Client.Request,
+                       Pusher.Client.Subscribe,
+                       Pusher.Client.HTTP2,
+                       Pusher.Client.Result,
+                       Pusher.Client.Error,
+                       Pusher.Client.Token
+
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >= 4.12
+                     , aeson
+                     , bytestring
+                     , containers
+                     , containers >= 0.5
+                     , data-default-class
+                     , exceptions
+                     , http-types
+                     , http2
+                     , http2
+                     , http2-client
+                     , jwt >= 0.10.0
+                     , mtl
+                     , scientific
+                     , semigroups
+                     , text
+                     , text
+                     , time
+                     , time
+                     , tls
+                     , transformers
+                     , utf8-string
+                     , utf8-string
+                     , vector
+                     , warp
+
+  -- hs-source-dirs:
+  ghc-options:         -fwarn-unused-imports -fwarn-unused-binds
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/syallop/Pusher-Platform-Haskell
+
